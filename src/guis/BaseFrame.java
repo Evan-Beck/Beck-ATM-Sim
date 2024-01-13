@@ -25,5 +25,4 @@ addGuiComponents();
 }
 
 protected abstract void addGuiComponents();
-
 }
