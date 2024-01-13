@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff6059a-863d-4256-b66e-75783d823f6b" name="Changes" comment="Established base GUI frame.">
-      <change afterPath="$PROJECT_DIR$/src/db_objs/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guis/BankingAppDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db_objs/MyJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db_objs/MyJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/BankingAppGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/BankingAppGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/LoginGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/LoginGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/RegisterGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/RegisterGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db_objs/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db_objs/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guis/BankingAppDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/BankingAppDialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,7 @@
 package db_objs;
+import java.math.BigDecimal;
+import java.util.Date;
+
 
 public class Transaction {
     private final int userId;
@@ -6,11 +9,13 @@ public class Transaction {
     private final BigDecimal transactionAmount;
     private final Date transactionDate;
 
-    public Transaction(int userId, String transactionType, BigDecimal transactionAmount, Date transactionDate);
-    this.userId = userId;
-    this.transactionType = transactionType;
-    this.transactionAmount = transactionAmount;
-    this.transactionDate =  transactionDate;
+    public Transaction(int userId, String transactionType, BigDecimal transactionAmount, Date transactionDate){
+
+        this.userId = userId;
+        this.transactionType = transactionType;
+        this.transactionAmount = transactionAmount;
+        this.transactionDate = transactionDate;
+    }
 
     public int getUserId() {
         return userId;
@@ -28,4 +33,4 @@ public class Transaction {
 
 
 
-}
+
