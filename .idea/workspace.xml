@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff6059a-863d-4256-b66e-75783d823f6b" name="Changes" comment="Established base GUI frame.">
+      <change afterPath="$PROJECT_DIR$/src/db_objs/MyJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db_objs/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guis/BankingAppGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guis/RegisterGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guis/BaseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/BaseFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guis/LoginGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/LoginGui.java" afterDir="false" />
     </list>
@@ -45,7 +50,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Evan/IdeaProjects/Beck-ATM-Sim/lib/mysql-connector-j-8.2.0.jar",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -96,5 +101,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Established base GUI frame." />
     <option name="LAST_COMMIT_MESSAGE" value="Established base GUI frame." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/guis/BankingAppGui.java</url>
+          <line>8</line>
+          <properties field="user" class="guis.BankingAppGui" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,10 +1,23 @@
 package guis;
+import db_objs.MyJDBC;
+import db_objs.User;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+
+
+
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
 
 
 
@@ -47,12 +60,46 @@ public class LoginGui extends BaseFrame{
     JButton loginButton = new JButton("Login");
         loginButton.setBounds(20, 460, getWidth() - 50, 40);
         loginButton.setFont(new Font("Dialog", Font.BOLD, 20));
+        loginButton.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String username = usernameField.getText();
+
+                String password = String.valueOf(passwordField.getPassword());
+
+                User user = MyJDBC.validateLogin(username, password);
+
+                if(user != null) {
+                    LoginGui.this.dispose();
+
+                    BankingAppGui bankingAppGui = new BankingAppGui(user);
+                    bankingAppGui.setVisible(true);
+
+                    JOptionPane.showMessageDialog(bankingAppGui, "Login Successfully!");
+
+                }else{
+
+                    JOptionPane.showMessageDialog(LoginGui.this, "Login failed...");
+                }
+            }
+
+        });
         add(loginButton);
 
         JLabel registerLabel = new JLabel("<html><a href=\"#\">Don't have an account? Register here</a></html>");
         registerLabel.setBounds(0, 510, getWidth() - 10, 30);
         registerLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
         registerLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+        registerLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                LoginGui.this.dispose();
+
+                new RegisterGui().setVisible(true);
+            }
+        });
+
         add(registerLabel);
     }
 }

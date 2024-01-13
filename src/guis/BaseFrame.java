@@ -1,28 +1,37 @@
 package guis;
 
+import db_objs.User;
 import javax.swing.*;
 
+
+
 public abstract class BaseFrame extends JFrame {
-public BaseFrame(String title){
-initialize(title);
-}
 
-private void initialize(String title){
+    protected User user;
 
-setTitle(title);
+    public BaseFrame(String title) { initialize(title); }
+    public BaseFrame(String title, User user) {
+        this.user = user;
 
-setSize(420, 600);
+        initialize(title);
+    }
 
-setDefaultCloseOperation(EXIT_ON_CLOSE);
+    private void initialize(String title){
 
-setLayout(null);
+        setTitle(title);
 
-setResizable(false);
+        setSize(420, 600);
 
-setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-addGuiComponents();
-}
+        setLayout(null);
 
-protected abstract void addGuiComponents();
+        setResizable(false);
+
+        setLocationRelativeTo(null);
+
+        addGuiComponents();
+    }
+
+    protected abstract void addGuiComponents();
 }
