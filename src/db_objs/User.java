@@ -1,11 +1,17 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package db_objs;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-
 public class User {
     private final int id;
-    private final String username, password;
+    private final String username;
+    private final String password;
     private BigDecimal currentBalance;
 
     public User(int id, String username, String password, BigDecimal currentBalance) {
@@ -15,23 +21,23 @@ public class User {
         this.currentBalance = currentBalance;
     }
 
-
     public int getId() {
-        return id;
+        return this.id;
     }
 
-    public java.lang.String getUsername() {
-        return username;
+    public String getUsername() {
+        return this.username;
     }
 
-    public java.lang.String getPassword() {
-        return password;
+    public String getPassword() {
+        return this.password;
     }
 
     public BigDecimal getCurrentBalance() {
-        return currentBalance;
+        return this.currentBalance;
     }
+
     public void setCurrentBalance(BigDecimal newBalance) {
-        currentBalance = newBalance.setScale(2, RoundingMode.FLOOR);
+        this.currentBalance = newBalance.setScale(2, RoundingMode.FLOOR);
     }
 }
