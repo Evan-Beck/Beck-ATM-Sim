@@ -26,7 +26,7 @@ public class MyJDBC {
                     "SELECT * FROM users WHERE username = ? AND password = ?"
             );
 
-            // replace the ? with values
+
             // parameter index referring to the iteration of the ? so 1 is the first ? and 2 is the second ?
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
@@ -62,7 +62,7 @@ public class MyJDBC {
     // false - register fails
     public static boolean register(String username, String password){
         try{
-            // first we will need to check if the username has already been taken
+
             if(!checkUser(username)){
                 Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
 
@@ -176,7 +176,7 @@ public class MyJDBC {
             ResultSet resultSet = queryUser.executeQuery();
 
             while (resultSet.next()) {
-                // perfrom transfer
+                // perform transfer
                 User transferredUser = new User(
                         resultSet.getInt("id"),
                         transferredUsername,
@@ -235,7 +235,7 @@ public class MyJDBC {
 
             ResultSet resultSet = selectAllTransaction.executeQuery();
 
-            // iterate throught the results (if any)
+            // iterate through the results (if any)
             while(resultSet.next()){
                 // create transaction obj
                 Transaction transaction = new Transaction(

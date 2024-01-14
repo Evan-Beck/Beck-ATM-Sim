@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eff6059a-863d-4256-b66e-75783d823f6b" name="Changes" comment="Established base GUI frame.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db_objs/MyJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db_objs/MyJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db_objs/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db_objs/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db_objs/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db_objs/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/BankingAppDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/BankingAppDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/BankingAppGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/BankingAppGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/BaseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/BaseFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/LoginGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/LoginGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guis/RegisterGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guis/RegisterGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +42,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Evan/IdeaProjects/Beck-ATM-Sim/lib/mysql-connector-j-8.2.0.jar",
+    "last_opened_file_path": "C:/Users/Evan/IdeaProjects/Beck-ATM-Sim",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

@@ -30,10 +30,10 @@ public class BankingAppDialog extends JDialog implements ActionListener {
         // add focus to the dialog (can't interact with anything else until dialog is closed)
         setModal(true);
 
-        // loads in teh center of our banking gui
+        // loads in the center of our banking gui
         setLocationRelativeTo(bankingAppGui);
 
-        // when suer closes dialog, it releases its resources that are being used
+        // when user closes dialog, it releases its resources that are being used
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         // prevents dialog from being resized
